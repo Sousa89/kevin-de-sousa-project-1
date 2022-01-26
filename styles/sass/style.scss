@@ -1,12 +1,12 @@
 // hello
 
-@import "setup";
-@import "typography";
-@import "baseStyles";
-@import "variables";
-@import "header";
-@import "nav";
-@import "sections";
-@import "forms";
-@import "footer";
-@import "mediaQueries";
+@import "./partials/setup";
+@import "./partials/variables";
+@import "./partials/typography";
+@import "./partials/baseStyles";
+@import "./partials/nav";
+@import "./partials/header";
+@import "./partials/sections";
+@import "./partials/forms";
+@import "./partials/footer";
+@import "./partials/mediaQueries";

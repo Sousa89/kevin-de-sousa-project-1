@@ -1,0 +1,184 @@
+.intro {
+  background-color: $alternateWhite;
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .introText {
+      display: flex;
+      flex-direction: column;
+      width: 55%;
+      height: 60vh;
+      justify-content: center;
+      button {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+.backgroundImgHome {
+  height: 60vh;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  background-image: url("../assets/home-image-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+// info section
+
+.info {
+  background-color: $alternateWhite;
+  .wrapper {
+    .infoContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 484px;
+      align-items: center;
+      padding-top: 55px;
+      padding-bottom: 55px;
+      .infoText {
+        width: 45%;
+      }
+    }
+  }
+}
+
+.infoContainer a {
+  position: relative;
+  text-decoration: none;
+  i {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: $mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 50%;
+  }
+}
+
+// ARTICLES SECTION
+
+// ARTICLES GENERAL
+.articles {
+  .imgContainer {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .articlesText {
+    width: 50%;
+  }
+}
+
+// ARTICLES TOP
+.articlesTop {
+  display: flex;
+  height: 45vh;
+  margin-bottom: 0px;
+  .imgContainer {
+    position: relative;
+    img {
+      position: absolute;
+      top: -35px;
+      box-shadow: 20px 20px aliceblue, 20px;
+      box-shadow: 22px 23px #68b0c1, -200px 23px #68b0c1;
+    }
+  }
+  .articlesText {
+    padding: 10px 10px 10px 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding-left: 60px;
+  }
+}
+
+.articlesBottom {
+  display: flex;
+  height: 45vh;
+  .imgContainer {
+    position: relative;
+    img {
+      position: absolute;
+      bottom: -25px;
+      box-shadow: 20px 20px aliceblue, 20px;
+      box-shadow: 22px 23px $mainColor, 200px 23px $mainColor;
+    }
+  }
+  .articlesText {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding-right: 30px;
+    button {
+      align-self: flex-end;
+    }
+  }
+}
+
+// ARTICLES END
+
+// JOURNEY SECTION
+.journey {
+  background-color: $alternateWhite;
+  height: 65vh;
+  .wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .imgContainer {
+      width: 104%;
+      img {
+        width: 100%;
+        box-shadow: 15px 15px $mainAltColor2;
+      }
+    }
+    .journeyText {
+      padding-left: 80px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+}
+
+// GALLERY SECTION
+
+.gallery {
+  height: 60vh;
+  .wrapper {
+    height: 100%;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+
+    // flex-direction: row;
+    li {
+      width: calc((100% / 3) - 20px);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

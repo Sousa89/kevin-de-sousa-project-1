@@ -1,0 +1,42 @@
+header {
+  background-color: $mainColor;
+  padding-top: 30px;
+  height: 600px;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .imgContainer {
+      width: 38%;
+      box-shadow: 15px 14px 0 0 white;
+      position: absolute;
+      bottom: -45px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.heroText {
+  width: 100%;
+  text-align: end;
+  padding-left: 45%;
+  padding-right: 10%;
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    width: 15%;
+    position: absolute;
+    left: 77%;
+    bottom: 46%;
+  }
+}
+
+// .heroImage {
+// }

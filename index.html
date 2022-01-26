@@ -13,44 +13,51 @@
 <body>
   <nav class="navBar">
     <div class="wrapper">
-      <ul navLinks>
+      <ul class="navLinks">
         <li>
-          <a href="./contact.html">Contact</a>
-
-        </li>
-        <li>
-          <a href="./blog.html">Blog</a>
-        </li>
-        <li>
-          <h1>Harper</h1>
+          <a href="./index.html">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="./index.html">Home</a>
+          <h1>Harper</h1>
+        </li>
+        <li>
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+
         </li>
       </ul>
     </div> <!-- .wrapper END-->
   </nav>
   <header>
     <div class="wrapper">
-      <div class="imgContainer">
-        <img src="./assets/home-image-1.jpg" alt="woman surrounded by blue and pink baloon">
+      <div class="imgContainer heroImage">
+        <img src="./assets/home-image-1.jpg" alt="woman surrounded by blue and pink balloon">
       </div> <!-- .imgContainer END-->
       <div class="heroText">
-        <img src="./assets/circle-text.png" alt="every day life with">
-        <h2>Harper</h2>
+        <h2>Harper
+          <span>
+            <img src="./assets/circle-text.png" alt="every day life with">
+          </span>
+        </h2>
+        <div class="imgContainer circleText">
+
+
+        </div>
       </div>
       <!--heroText END-->
     </div> <!-- .wrapper END-->
   </header>
 
   <main>
-    <section intro id="about">
+    <section class="intro" id="intro">
       <div class="wrapper">
         <div class="introText">
-          <h3>Who's Harper</h3>
+          <h4>Who's Harper?</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem porro suscipit officia consequatur
             repudiandae facilis itaque recusandae, molestias reiciendis atque nam, saepe accusamus fuga. Omnis a illum
             itaque et rem eligendi aperiam, consequatur velit?</p>
@@ -68,14 +75,22 @@
         <div class="infoContainer">
           <div class="infoText">
             <!-- ::before icon will be inserted through css here-->
-            <h4>Photos</h4>
+            <a href="#gallery">
+              <i class="fas fa-photo-video"></i>
+              <h5>Photos</h5>
+            </a>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quos, delectus ut aliquid reiciendis
               eum, ea beatae commodi voluptatem ipsam, doloremque itaque labore eveniet saepe architecto.</p>
           </div> <!-- .infoText END-->
 
           <div class="infoText">
             <!-- ::before icon will be inserted through css here-->
-            <h4>About</h4>
+            <a href="#about">
+              <i class="fas fa-user"></i>
+              <h5>About</h5>
+            </a>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quos, delectus ut aliquid
               reiciendis
               eum, ea beatae commodi voluptatem ipsam, doloremque itaque labore eveniet saepe architecto.</p>
@@ -83,7 +98,11 @@
 
           <div class="infoText">
             <!-- ::before icon will be inserted through css here-->
-            <h4>Blog</h4>
+            <a href="./blog.html">
+              <i class="fas fa-desktop"></i>
+              <h5>Blog</h5>
+            </a>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quos, delectus ut aliquid
               reiciendis
               eum, ea beatae commodi voluptatem ipsam, doloremque itaque labore eveniet saepe architecto.</p>
@@ -91,7 +110,11 @@
 
           <div class="infoText">
             <!-- ::before icon will be inserted through css here-->
-            <h4>Contact Me</h4>
+            <a href="./contact.html">
+              <i class="fas fa-phone"></i>
+              <h5>Contact Me</h5>
+            </a>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quos, delectus ut aliquid
               reiciendis
               eum, ea beatae commodi voluptatem ipsam, doloremque itaque labore eveniet saepe architecto.</p>
@@ -102,16 +125,20 @@
       </div> <!-- .wrapper END-->
     </section> <!-- INFO SECTION END-->
 
+    <!-- ARTICLES SECTION -->
     <section class="articles">
       <div class="wrapper">
+        <!-- ARTICLES TOP -->
         <div class="articlesTop">
+          <!-- ARTICLES TOP IMG -->
           <div class="imgContainer">
             <img src="./assets/home-image-3.jpg" alt="Two people surfing during a sunset">
           </div>
           <!--.imgContainer END-->
 
+          <!-- ARTICLES TOP TEXT -->
           <div class="articlesText">
-            <h4>Harper's Travels</h4>
+            <h5>Harper's Travels</h5>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo culpa odio asperiores quo, quasi
               autem tenetur, porro totam aliquam voluptate sequi odit obcaecati animi dicta voluptas quam maxime quaerat
               cum nam nihil assumenda. Minus.</p>
@@ -120,12 +147,9 @@
           <!--articlesText END-->
         </div><!-- .articlesTop END-->
 
+        <!-- ARTICLES BOTTOM -->
         <div class="articlesBottom">
-          <div class="imgContainer">
-            <img src="./assets/home-image-4.jpg" alt="an industrial building">
-          </div>
-          <!--.imgContainer END-->
-
+          <!-- ARTICLES BOTTOM TEXT -->
           <div class="articlesText">
             <h4>Favorite Things</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, repudiandae! Debitis, hic illum magnam
@@ -134,6 +158,12 @@
             <button class="readButton">Read More</button>
 
           </div> <!-- .articlesText END-->
+          <!-- ARTICLES BOTTOM IMG -->
+          <div class="imgContainer">
+            <img src="./assets/home-image-4.jpg" alt="an industrial building">
+          </div>
+          <!--.imgContainer END-->
+
         </div> <!-- .articlesBottom END-->
       </div> <!-- .wrapper END-->
 
@@ -142,15 +172,14 @@
 
     <!-- JOURNEY SECTION -->
 
-    <section class="journey">
+    <section class="journey" id="about">
       <div class="wrapper">
-
         <div class="imgContainer">
           <img src="./assets/home-image-5.jpg" alt="Young woman with long dark wavy hair, and flower print dress">
         </div> <!-- .imgContainer END-->
 
         <div class="journeyText">
-          <h3>Harper's Journey</h3>
+          <h4>Harper's Journey</h4>
           <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde quos alias quas necessitatibus debitis
             error
             inventore dignissimos explicabo adipisci corporis iure voluptates veniam repellendus odio reprehenderit
@@ -164,22 +193,22 @@
 
     </section> <!-- JOURNEY SECTION END-->
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="wrapper">
 
-        <div class="imgContainer">
-          <img src="./assets/home-image-6.jpg" alt="a Pink house">
-        </div><!-- .imageContainer END-->
+        <ul>
+          <li>
+            <img src="./assets/home-image-6.jpg" alt="a Pink house">
+          </li>
 
-        <div class="imgContainer">
-          <img src="./assets/home-image-7.jpg" alt="a plane flying during a sunet">
-        </div><!-- .imageContainer END-->
+          <li>
+            <img src="./assets/home-image-7.jpg" alt="a plane flying during a sunet">
+          </li>
 
-        <div class="imgContainer">
-          <img src="./assets/home-image-8.jpg" alt="pink smoke in the air">
-        </div><!-- .imageContainer END-->
-
-      </div> <!-- .wrapper END-->
+          <li>
+            <img src="./assets/home-image-8.jpg" alt="pink smoke in the air">
+          </li>
+        </ul>
     </section> <!-- GALLERY SECTION END-->
 
     <footer class="copyright">
@@ -188,19 +217,6 @@
       </div><!-- .wrapper END-->
     </footer> <!-- .copyright END-->
 
-  </main>
-
-  <footer class="copyright">
-    <div class="wrapper">
-      <p>Copyright © Juno College 2022</p>
-    </div><!-- .wrapper END-->
-  </footer> <!-- .copyright END-->
-
 </body>
 
 </html>
-
-<!-- https://fontawesome.com/v5.15/icons/image?style=solid
-https://fontawesome.com/v5.15/icons/user?style=solid
-https://fontawesome.com/v5.15/icons/tv?style=solid
-https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=phone -->
