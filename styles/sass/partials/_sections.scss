@@ -1,3 +1,5 @@
+// --------INDEX/HOME MAIN----------
+
 .intro {
   background-color: $alternateWhite;
   .wrapper {
@@ -179,6 +181,85 @@
       img {
         width: 100%;
       }
+    }
+  }
+}
+
+// / --------INDEX/HOME MAIN END--------
+
+// ----------BLOG MAIN-----------
+
+.blogMain {
+  background-color: $alternateWhite;
+  padding-top: 5%;
+}
+
+.blogAside {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  // Aside Top
+  .asideTop {
+    padding: 30px;
+    background-color: white;
+    margin-bottom: 7%;
+    .imgContainer {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .asideTopText {
+      h5 {
+        margin-top: 8%;
+      }
+    }
+  }
+  // Aside Bottom
+  .asideBottom {
+    padding: 30px;
+    background-color: white;
+    ul {
+      padding-left: 22px;
+      li {
+        p {
+          line-height: 1.5rem;
+          margin: 0;
+        }
+        p::before {
+          content: "";
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+.blogMain .wrapper {
+  display: flex;
+  .blogContainer {
+    width: 65%;
+    margin-left: 5%;
+    .blogText {
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 11%;
+      border-bottom: 5px solid blue;
+      margin-bottom: 4%;
+    }
+  }
+}
+
+.blogComments {
+  border-bottom: 5px solid $mainAltColor2;
+  margin-bottom: 4%;
+  .commentsTop,
+  .commentsBottom {
+    background-color: white;
+    display: flex;
+    padding: 5%;
+    p {
+      margin: 0;
     }
   }
 }

@@ -1,4 +1,6 @@
-header {
+// -------INDEX HEADER--------
+
+.indexHeader {
   background-color: $mainColor;
   padding-top: 30px;
   height: 600px;
@@ -38,5 +40,21 @@ header {
   }
 }
 
-// .heroImage {
-// }
+// ------BLOG HEADER--------
+
+.blogHeader {
+  height: 42vh;
+  background-color: red;
+  position: relative;
+  background-image: url(../assets/blog-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1300px;
+  .wrapper {
+    h2 {
+      font-size: 4rem;
+      position: absolute;
+      bottom: -27px;
+    }
+  }
+}
