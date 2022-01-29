@@ -425,6 +425,7 @@ nav .navLinks a {
 }
 .indexHeader .wrapper .imgContainer {
   width: 38%;
+  min-width: 262px;
   -webkit-box-shadow: 15px 14px 0 0 white;
           box-shadow: 15px 14px 0 0 white;
   position: absolute;
@@ -432,6 +433,8 @@ nav .navLinks a {
 }
 .indexHeader .wrapper .imgContainer img {
   width: 100%;
+  min-width: 262px;
+  min-height: 366px;
 }
 
 .heroText {
@@ -445,6 +448,10 @@ nav .navLinks a {
   text-align: center;
 }
 .heroText img {
+  max-height: 150px;
+  min-height: 150px;
+  max-width: 150px;
+  min-width: 150px;
   width: 15%;
   position: absolute;
   left: 77%;
@@ -452,8 +459,9 @@ nav .navLinks a {
 }
 
 .blogHeader {
+  background-color: #b9dde7;
+  margin: 0 auto;
   height: 42vh;
-  background-color: red;
   position: relative;
   background-image: url(../assets/blog-image-1.jpg);
   background-repeat: no-repeat;
@@ -466,7 +474,13 @@ nav .navLinks a {
   bottom: -27px;
 }
 
+a:hover,
+a:focus {
+  color: #ffff;
+}
+
 .intro {
+  max-height: 821px;
   background-color: #f6f6f6;
 }
 .intro .wrapper {
@@ -479,6 +493,7 @@ nav .navLinks a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-height: 454px;
 }
 .intro .wrapper .introText {
   display: -webkit-box;
@@ -503,6 +518,7 @@ nav .navLinks a {
   height: 60vh;
   width: 100%;
   max-width: 1250px;
+  max-height: 392px;
   margin: 0 auto;
   background-image: url("../assets/home-image-2.jpg");
   background-position: center;
@@ -511,6 +527,7 @@ nav .navLinks a {
 }
 
 .info {
+  max-height: 485px;
   background-color: #f6f6f6;
 }
 .info .wrapper .infoContainer {
@@ -528,6 +545,7 @@ nav .navLinks a {
           align-items: center;
   padding-top: 55px;
   padding-bottom: 55px;
+  padding-left: 8%;
 }
 .info .wrapper .infoContainer .infoText {
   width: 45%;
@@ -557,8 +575,12 @@ nav .navLinks a {
   border-radius: 50%;
 }
 
+.articles {
+  max-height: 659px;
+}
 .articles .imgContainer {
   width: 50%;
+  max-height: 649px;
 }
 .articles .imgContainer img {
   width: 100%;
@@ -572,6 +594,7 @@ nav .navLinks a {
   display: -ms-flexbox;
   display: flex;
   height: 45vh;
+  max-height: 325px;
   margin-bottom: 0px;
 }
 .articlesTop .imgContainer {
@@ -579,6 +602,8 @@ nav .navLinks a {
 }
 .articlesTop .imgContainer img {
   position: absolute;
+  max-height: 315px;
+  max-width: 507px;
   top: -35px;
   -webkit-box-shadow: 20px 20px aliceblue, 20px;
           box-shadow: 20px 20px aliceblue, 20px;
@@ -608,12 +633,15 @@ nav .navLinks a {
   display: -ms-flexbox;
   display: flex;
   height: 45vh;
+  max-height: 325px;
 }
 .articlesBottom .imgContainer {
   position: relative;
 }
 .articlesBottom .imgContainer img {
   position: absolute;
+  max-height: 315px;
+  max-width: 504px;
   bottom: -25px;
   -webkit-box-shadow: 20px 20px aliceblue, 20px;
           box-shadow: 20px 20px aliceblue, 20px;
@@ -644,6 +672,7 @@ nav .navLinks a {
 .journey {
   background-color: #f6f6f6;
   height: 65vh;
+  max-height: 466px;
 }
 .journey .wrapper {
   height: 100%;
@@ -655,10 +684,15 @@ nav .navLinks a {
           align-items: center;
 }
 .journey .wrapper .imgContainer {
-  width: 104%;
+  width: 100%;
+  max-height: 255px;
+  max-width: 255px;
+  min-width: 200px;
+  min-height: 200px;
 }
 .journey .wrapper .imgContainer img {
   width: 100%;
+  max-height: 256px;
   -webkit-box-shadow: 15px 15px #227284;
           box-shadow: 15px 15px #227284;
 }
@@ -670,6 +704,7 @@ nav .navLinks a {
 
 .gallery {
   height: 60vh;
+  max-height: 450px;
 }
 .gallery .wrapper {
   height: 100%;
@@ -695,6 +730,8 @@ nav .navLinks a {
 }
 .gallery ul li {
   width: calc((100% / 3) - 20px);
+  max-height: 300px;
+  max-width: 300px;
 }
 .gallery ul li img {
   width: 100%;
@@ -753,13 +790,15 @@ nav .navLinks a {
 .blogMain .wrapper .blogContainer {
   width: 65%;
   margin-left: 5%;
+  margin-bottom: 7%;
 }
 .blogMain .wrapper .blogContainer .blogText {
+  background-color: white;
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 3%;
   padding-bottom: 11%;
-  border-bottom: 5px solid blue;
+  border-bottom: 5px solid #227284;
   margin-bottom: 4%;
 }
 
@@ -767,17 +806,115 @@ nav .navLinks a {
   border-bottom: 5px solid #227284;
   margin-bottom: 4%;
 }
-.blogComments .commentsTop,
-.blogComments .commentsBottom {
+.blogComments .commentsBox {
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5%;
 }
-.blogComments .commentsTop p,
-.blogComments .commentsBottom p {
+.blogComments .commentsBox .imgContainer {
+  margin-right: 10px;
+}
+.blogComments .commentsBox p {
   margin: 0;
+}
+.blogComments .commentsTop {
+  margin-bottom: 3%;
+}
+
+.contactSection {
+  background-color: lightgray;
+  padding-top: 6%;
+  margin-bottom: 0%;
+}
+.contactSection .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactSection .wrapper .contactInfo {
+  background-color: white;
+  width: 30%;
+}
+.contactSection .wrapper .commentsForm {
+  width: 66%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form .nameEmail input {
+  width: 49%;
+  height: 55px;
+  padding-left: 4%;
+  border: none;
+  margin-bottom: 3%;
+}
+form .nameEmail input::-webkit-input-placeholder {
+  font-family: "Cabin";
+  opacity: 1;
+}
+form .nameEmail input::-moz-placeholder {
+  font-family: "Cabin";
+  opacity: 1;
+}
+form .nameEmail input:-ms-input-placeholder {
+  font-family: "Cabin";
+  opacity: 1;
+}
+form .nameEmail input::-ms-input-placeholder {
+  font-family: "Cabin";
+  opacity: 1;
+}
+form .nameEmail input::placeholder {
+  font-family: "Cabin";
+  opacity: 1;
+}
+form textarea {
+  padding-left: 4%;
+  width: 100%;
+  padding-top: 5%;
+  border: none;
+  resize: none;
+  margin-bottom: 3%;
+}
+form textarea::-webkit-input-placeholder {
+  font-family: "Cabin";
+  opacity: 1;
+}
+form textarea::-moz-placeholder {
+  font-family: "Cabin";
+  opacity: 1;
+}
+form textarea:-ms-input-placeholder {
+  font-family: "Cabin";
+  opacity: 1;
+}
+form textarea::-ms-input-placeholder {
+  font-family: "Cabin";
+  opacity: 1;
+}
+form textarea::placeholder {
+  font-family: "Cabin";
+  opacity: 1;
 }
 
 footer {

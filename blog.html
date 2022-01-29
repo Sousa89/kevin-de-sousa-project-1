@@ -134,7 +134,7 @@
         <!-- BLOG COMMENTS-->
 
         <div class="blogComments">
-          <div class="commentsTop">
+          <div class="commentsTop commentsBox">
             <div class="imgContainer">
               <img src="./assets/blog-image-3.jpg" alt="Woman with pink backdrop and short dark hair">
             </div> <!-- .imgContainer END-->
@@ -147,7 +147,7 @@
           </div> <!-- .commentsTop END-->
 
           <!-- COMMENT BOTTOM -->
-          <div class="commentsBottom">
+          <div class="commentsBottom commentsBox">
             <div class="imgContainer">
               <img src="./assets/blog-image-4.jpg" alt="Woman with blonde hair and sun hat blowing a bubble gum">
             </div> <!-- .imgContainer END-->
@@ -167,19 +167,22 @@
 
         <div class="commentsForm">
           <form action="">
-            <!-- <div class="nameEmail"> -->
 
-            <input type="text" name="name" id="name" placeholder="Name" required>
-            <label for="name" class="sr-only">First Name Here</label>
+            <!--  Name-Email -->
+            <div class="nameEmail">
 
-            <input type="email" name="email" id="email" placeholder="Email address" required>
-            <label for="email" class="sr-only">Email address here</label>
-            <!-- </div> .nameEmail END -->
+              <input type="text" name="name" id="name" placeholder="Name" required>
+              <label for="name" class="sr-only">First Name Here</label>
+
+              <input type="email" name="email" id="email" placeholder="Email address" required>
+              <label for="email" class="sr-only">Email address here</label>
+            </div>
+            <!--.nameEmail END-->
 
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
             <label for="message" class="sr-only">Message Here</label>
 
-            <button type="submit" value="submit">Submit</button>
+            <button type="submit" value="submit">Post Comment</button>
           </form>
         </div> <!-- .commentsForm END-->
 

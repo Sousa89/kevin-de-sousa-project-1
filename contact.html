@@ -14,108 +14,124 @@
   <!-- NAV BAR SECTION -->
   <nav class="navBar">
     <div class="wrapper">
-      <ul navLinks>
+      <ul class="navLinks">
         <li>
-          <a href="./contact.html">Contact</a>
-
-        </li>
-        <li>
-          <a href="./blog.html">Blog</a>
-        </li>
-        <li>
-          <h1>Harper</h1>
+          <a href="./index.html">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="./index.html">Home</a>
+          <h1>Harper</h1>
+        </li>
+        <li>
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+
         </li>
       </ul>
     </div> <!-- .wrapper END-->
-  </nav> <!-- NAV BAR SECTION ENDS-->
+  </nav>
+  <!-- NAV BAR SECTION ENDS-->
+
 
   <!-- HEADER SECTION-->
-  <header>
+  <header class="blogHeader">
     <div class="wrapper">
       <h2>Contact Me</h2>
     </div>
   </header>
   <!-- HEADER SECTION ENDS -->
+  <main>
 
-  <!-- CONTACT SECTION -->
-  <section class="contactSection">
+    <!-- CONTACT SECTION -->
+    <section class="contactSection">
+      <div class="wrapper">
+
+        <!-- CONTACT INFO CONTAINER -->
+        <div class="contactInfo">
+
+          <!-- CONTACT SOCIALS -->
+          <div class="contactSocials">
+            <a href="">
+              <i class=" fab fa-facebook-f" aria-hidden="true"></i>
+              <span class="sr-only">Link to facebook</span>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+              <span class="sr-only">Link to Twitter</span>
+            </a>
+            <a href="">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              <span class="sr-only">Link to linked in</span>
+            </a>
+            <a href="">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+              <span class="sr-only">Link to instagram</span>
+            </a>
+          </div> <!-- .contactSocials END-->
+          <!-- CONTACT SOCIALS END -->
+
+          <!-- CONTACT TEXT-->
+          <div class="contactText">
+            <p>info@gmail.com</p>
+            <ul>
+              <li>
+                <p>123 - 456 - 7890</p>
+              </li>
+              <li>
+                <p>123 Queen Street West. Unit 10</p>
+              </li>
+              <li>
+                <p>Toronto, Ontario</p>
+              </li>
+              <li>
+                <p>M5V2DS</p>
+              </li>
+            </ul>
+          </div> <!-- .contactText END-->
+          <!-- CONTACT TEXT END -->
+
+        </div> <!-- contactInfo END-->
+        <!-- CONTACT INFO CONTAINER END -->
+
+        <!-- COMMENTS FORM-->
+
+        <div class="commentsForm">
+          <form action="">
+
+            <!--  Name-Email -->
+            <div class="nameEmail">
+
+              <input type="text" name="name" id="name" placeholder="Name" required>
+              <label for="name" class="sr-only">First Name Here</label>
+
+              <input type="email" name="email" id="email" placeholder="Email address" required>
+              <label for="email" class="sr-only">Email address here</label>
+            </div>
+            <!--.nameEmail END-->
+
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+            <label for="message" class="sr-only">Message Here</label>
+
+            <button type="submit" value="submit">Post Comment</button>
+          </form>
+        </div> <!-- .commentsForm END-->
+
+        <!-- COMMENTS FORM END-->
+
+      </div> <!-- .wrapper END-->
+    </section> <!-- CONTACT SECTION END-->
+  </main>
+
+  <footer class="copyright">
     <div class="wrapper">
+      <p>Copyright © Juno College 2022</p>
+    </div><!-- .wrapper END-->
+  </footer> <!-- .copyright END-->
 
-      <!-- CONTACT INFO CONTAINER -->
-      <div class="contactInfo">
-
-        <!-- CONTACT SOCIALS -->
-        <div class="contactSocials">
-          <a href="">
-            <i class=" fab fa-facebook-f" aria-hidden="true"></i>
-            <span class="sr-only">Link to facebook</span>
-          </a>
-          <a href="">
-            <i class="fab fa-twitter" aria-hidden="true"></i>
-            <span class="sr-only">Link to Twitter</span>
-          </a>
-          <a href="">
-            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-            <span class="sr-only">Link to linked in</span>
-          </a>
-          <a href="">
-            <i class="fab fa-instagram" aria-hidden="true"></i>
-            <span class="sr-only">Link to instagram</span>
-          </a>
-        </div> <!-- .contactSocials END-->
-        <!-- CONTACT SOCIALS END -->
-
-        <!-- CONTACT TEXT-->
-        <div class="contactText">
-          <p>info@gmail.com</p>
-          <ul>
-            <li>
-              <p>123 - 456 - 7890</p>
-            </li>
-            <li>
-              <p>123 Queen Street West. Unit 10</p>
-            </li>
-            <li>
-              <p>Toronto, Ontario</p>
-            </li>
-            <li>
-              <p>M5V2DS</p>
-            </li>
-          </ul>
-        </div> <!-- .contactText END-->
-        <!-- CONTACT TEXT END -->
-
-      </div> <!-- contactInfo END-->
-      <!-- CONTACT INFO CONTAINER END -->
-
-      <!-- CONTACT FORM -->
-      <div class="contactForm">
-        <form action="">
-          <!-- <div class="nameEmail"> -->
-
-          <input type="text" name="name" id="name" placeholder="Name" required>
-          <label for="name" class="sr-only">First Name Here</label>
-
-          <input type="email" name="email" id="email" placeholder="Email address" required>
-          <label for="email" class="sr-only">Email address here</label>
-          <!-- </div> .nameEmail END -->
-
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
-          <label for="message" class="sr-only">Message Here</label>
-
-          <button type="submit" value="submit">Submit</button>
-        </form>
-      </div> <!-- .contactForm END-->
-      <!-- CONTACT FORM END -->
-
-    </div> <!-- .wrapper END-->
-  </section> <!-- CONTACT SECTION END-->
 
 </body>
 

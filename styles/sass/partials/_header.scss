@@ -13,11 +13,14 @@
 
     .imgContainer {
       width: 38%;
+      min-width: 262px;
       box-shadow: 15px 14px 0 0 white;
       position: absolute;
       bottom: -45px;
       img {
         width: 100%;
+        min-width: 262px;
+        min-height: 366px;
       }
     }
   }
@@ -33,6 +36,10 @@
     text-align: center;
   }
   img {
+    max-height: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    min-width: 150px;
     width: 15%;
     position: absolute;
     left: 77%;
@@ -43,8 +50,9 @@
 // ------BLOG HEADER--------
 
 .blogHeader {
+  background-color: $mainColor;
+  margin: 0 auto;
   height: 42vh;
-  background-color: red;
   position: relative;
   background-image: url(../assets/blog-image-1.jpg);
   background-repeat: no-repeat;
@@ -57,4 +65,11 @@
       bottom: -27px;
     }
   }
+}
+
+// ------------------------
+
+a:hover,
+a:focus {
+  color: #ffff;
 }
