@@ -485,8 +485,8 @@ nav .navLinks a {
   min-width: 150px;
   width: 15%;
   position: absolute;
-  left: 77%;
-  bottom: 46%;
+  left: 70%;
+  bottom: 23%;
 }
 
 .blogHeader {
@@ -944,7 +944,7 @@ nav .navLinks a {
 .contactSection .contactInfo .contactText p {
   margin: 0%;
 }
-.contactSection .commentsForm {
+.contactSection .contactForm {
   width: 67%;
 }
 
@@ -1409,16 +1409,16 @@ footer p {
     width: 90%;
   }
 
-  .commentsForm {
+  .contactForm {
     width: 56%;
   }
-  .commentsForm form .nameEmail {
+  .contactForm form .nameEmail {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .commentsForm form .nameEmail input {
+  .contactForm form .nameEmail input {
     width: 100%;
   }
 }
@@ -1651,7 +1651,7 @@ footer p {
   .contactSection .wrapper .contactInfo .contactSocials {
     width: 100%;
   }
-  .contactSection .wrapper .commentsForm {
+  .contactSection .wrapper .contactForm {
     width: 100%;
     margin-top: 10%;
   }
