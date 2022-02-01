@@ -846,7 +846,7 @@ nav .navLinks a {
 }
 
 .contactSection {
-  background-color: lightgray;
+  background-color: #f6f6f6;
   padding-top: 6%;
   margin-bottom: 0%;
 }
@@ -861,6 +861,7 @@ nav .navLinks a {
 .contactSection .wrapper .contactInfo {
   background-color: white;
   width: 30%;
+  text-decoration: none;
 }
 .contactSection .wrapper .commentsForm {
   width: 66%;
@@ -1435,6 +1436,9 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .blogAside .asideBottom h5 {
+    padding-top: 4%;
+  }
   .blogAside .asideBottom ul {
     width: 100%;
     text-align: center;
@@ -1495,6 +1499,9 @@ footer p {
 
   .blogMain {
     background-color: #b9dde7;
+  }
+  .blogMain .blogAside h5 {
+    width: 100%;
   }
 
   .blogComments {

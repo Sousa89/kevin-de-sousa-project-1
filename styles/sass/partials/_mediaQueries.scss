@@ -448,6 +448,9 @@
     width: 100%;
     .asideBottom {
       flex-direction: column;
+      h5 {
+        padding-top: 4%;
+      }
       // justify-content: ;
       ul {
         width: 100%;
@@ -521,9 +524,11 @@
 
   // ---BLOG PAGE---
 
-  // BLOG ASIDE SECTION
   .blogMain {
     background-color: $mainColor;
+    .blogAside h5 {
+      width: 100%;
+    }
   }
 
   // BLOG COMMENTS

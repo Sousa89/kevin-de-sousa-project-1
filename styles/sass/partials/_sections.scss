@@ -297,7 +297,7 @@
 // CONTACT ME SECTION
 
 .contactSection {
-  background-color: lightgray;
+  background-color: $alternateWhite;
   padding-top: 6%;
   margin-bottom: 0%;
   .wrapper {
@@ -306,6 +306,7 @@
     .contactInfo {
       background-color: white;
       width: 30%;
+      text-decoration: none;
     }
     .commentsForm {
       width: 66%;
