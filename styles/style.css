@@ -398,6 +398,11 @@ a:focus i {
   background-color: black;
 }
 
+.contactSocial a:hover i,
+a:focus i {
+  color: #b9dde7;
+}
+
 nav {
   background-color: #b9dde7;
   height: 3rem;
@@ -471,6 +476,7 @@ nav .navLinks a {
 .heroText h2 {
   width: 100%;
   text-align: center;
+  position: relative;
 }
 .heroText img {
   max-height: 150px;
@@ -494,6 +500,22 @@ nav .navLinks a {
   max-width: 1300px;
 }
 .blogHeader .wrapper h2 {
+  font-size: 4rem;
+  position: absolute;
+  bottom: -27px;
+}
+
+.contactHeader {
+  background-color: #b9dde7;
+  margin: 0 auto;
+  height: 42vh;
+  position: relative;
+  background-image: url(/assets/contact-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1300px;
+}
+.contactHeader .wrapper h2 {
   font-size: 4rem;
   position: absolute;
   bottom: -27px;
@@ -599,8 +621,12 @@ nav .navLinks a {
 .articles {
   max-height: 659px;
 }
-.articles .imgContainer {
+.articles .articlesTopImgSection {
   width: 50%;
+  max-height: 649px;
+}
+.articles .imgContainer {
+  width: 100%;
   max-height: 649px;
 }
 .articles .imgContainer img {
@@ -626,8 +652,6 @@ nav .navLinks a {
   max-height: 315px;
   max-width: 507px;
   top: -35px;
-  -webkit-box-shadow: 20px 20px aliceblue, 20px;
-          box-shadow: 20px 20px aliceblue, 20px;
   -webkit-box-shadow: 22px 23px #68b0c1, -200px 23px #68b0c1;
           box-shadow: 22px 23px #68b0c1, -200px 23px #68b0c1;
 }
@@ -656,14 +680,16 @@ nav .navLinks a {
   height: 45vh;
   max-height: 325px;
 }
-.articlesBottom .imgContainer {
+.articlesBottom .articlesBottomImgSection {
+  width: 50%;
+  max-height: 649px;
   position: relative;
 }
-.articlesBottom .imgContainer img {
+.articlesBottom .articlesBottomImgSection .imgContainer img {
   position: absolute;
   max-height: 315px;
   max-width: 504px;
-  bottom: -25px;
+  bottom: 0px;
   -webkit-box-shadow: 20px 20px aliceblue, 20px;
           box-shadow: 20px 20px aliceblue, 20px;
   -webkit-box-shadow: 22px 23px #b9dde7, 200px 23px #b9dde7;
@@ -778,6 +804,9 @@ nav .navLinks a {
   padding: 30px;
   background-color: white;
   margin-bottom: 7%;
+  border-right: 11px solid #b9dde7;
+  border-radius: 1%;
+  border-bottom: 11px solid #b9dde7;
 }
 .blogAside .asideTop .imgContainer {
   width: 100%;
@@ -791,6 +820,9 @@ nav .navLinks a {
 .blogAside .asideBottom {
   padding: 30px;
   background-color: white;
+  border-bottom: 11px solid #b9dde7;
+  border-right: 11px solid #b9dde7;
+  border-radius: 1%;
 }
 .blogAside .asideBottom ul {
   padding-left: 22px;
@@ -823,6 +855,11 @@ nav .navLinks a {
   border-bottom: 5px solid #227284;
   margin-bottom: 4%;
 }
+.blogMain .wrapper .blogContainer .blogText p:nth-child(2) {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #227284;
+}
 
 .blogComments {
   border-bottom: 5px solid #227284;
@@ -834,6 +871,11 @@ nav .navLinks a {
   display: -ms-flexbox;
   display: flex;
   padding: 5%;
+}
+.blogComments .commentsBox .commentsText > p:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #227284;
 }
 .blogComments .commentsBox .imgContainer {
   margin-right: 10px;
@@ -848,6 +890,7 @@ nav .navLinks a {
 .contactSection {
   background-color: #f6f6f6;
   padding-top: 6%;
+  padding-bottom: 9%;
   margin-bottom: 0%;
 }
 .contactSection .wrapper {
@@ -862,9 +905,47 @@ nav .navLinks a {
   background-color: white;
   width: 30%;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 275px;
+  padding-left: 3%;
 }
-.contactSection .wrapper .commentsForm {
-  width: 66%;
+.contactSection .contactInfo .contactSocials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 64%;
+  margin-bottom: 4%;
+}
+.contactSection .contactInfo .contactSocials a {
+  color: #227284;
+}
+.contactSection .contactInfo .contactEmail {
+  font-weight: bold;
+  font-family: inherit;
+  margin: 9% 0;
+}
+.contactSection .contactInfo .contactText ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 4%;
+}
+.contactSection .contactInfo .contactText p {
+  margin: 0%;
+}
+.contactSection .commentsForm {
+  width: 67%;
 }
 
 form {
@@ -1193,10 +1274,11 @@ footer p {
   }
   .articles .wrapper .articlesTop .imgContainer {
     position: initial;
+    width: 100%;
   }
   .articles .wrapper .articlesTop img {
-    -webkit-box-shadow: 20px 23px #68b0c1, -200px 23px #68b0c1, -400px 23px #68b0c1;
-            box-shadow: 20px 23px #68b0c1, -200px 23px #68b0c1, -400px 23px #68b0c1;
+    -webkit-box-shadow: -20px 23px #68b0c1, 200px 23px #68b0c1, 400px 23px #68b0c1;
+            box-shadow: -20px 23px #68b0c1, 200px 23px #68b0c1, 400px 23px #68b0c1;
   }
   .articles .wrapper .articlesBottom {
     display: -webkit-box;
@@ -1281,6 +1363,9 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .blogAside .asideTopText p {
+    text-align: center;
+  }
   .blogAside .asideBottom {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1297,6 +1382,9 @@ footer p {
     text-align: center;
     margin-bottom: 4%;
   }
+  .blogMain .wrapper .blogContainer .blogText p:nth-child(2) {
+    text-align: center;
+  }
   .blogMain .wrapper .blogContainer .blogComments .commentsTop {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1305,6 +1393,33 @@ footer p {
   .blogMain .wrapper .blogContainer .blogComments .imgContainer {
     -ms-flex-item-align: center;
         align-self: center;
+  }
+}
+@media (max-width: 675px) {
+  .contactSection .contactSocials {
+    width: 100%;
+  }
+  .contactSection .contactInfo {
+    width: 40%;
+    max-height: 397px;
+    padding-right: 2%;
+  }
+
+  .contactSection .contactInfo .contactSocials {
+    width: 90%;
+  }
+
+  .commentsForm {
+    width: 56%;
+  }
+  .commentsForm form .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .commentsForm form .nameEmail input {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
@@ -1349,7 +1464,7 @@ footer p {
         -ms-writing-mode: initial;
             writing-mode: initial;
     text-align: center;
-    width: 200px;
+    width: 300px;
   }
 
   .intro .wrapper .introText {
@@ -1427,19 +1542,22 @@ footer p {
     height: 11vh;
   }
 
-  .blogAside {
+  .blogMain .wrapper {
     width: 100%;
   }
-  .blogAside .asideBottom {
+  .blogMain .wrapper .blogAside {
+    width: 100%;
+  }
+  .blogMain .wrapper .blogAside .asideBottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .blogAside .asideBottom h5 {
+  .blogMain .wrapper .blogAside .asideBottom h5 {
     padding-top: 4%;
   }
-  .blogAside .asideBottom ul {
+  .blogMain .wrapper .blogAside .asideBottom ul {
     width: 100%;
     text-align: center;
     list-style: none;
@@ -1479,6 +1597,9 @@ footer p {
     margin-bottom: 0;
     height: 740px;
   }
+  .info .infoContainer a i {
+    top: 11px;
+  }
 
   .articles {
     margin-bottom: 0;
@@ -1503,16 +1624,35 @@ footer p {
   .blogMain .blogAside h5 {
     width: 100%;
   }
-
-  .blogComments {
+  .blogMain .blogComments {
     border: none;
   }
-  .blogComments .commentsBox {
+  .blogMain .blogComments .commentsBox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     border-right: 5px solid #227284;
     border-bottom: 5px solid #227284;
+  }
+
+  .contactSection .wrapper {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactSection .wrapper .contactInfo {
+    width: 100%;
+    text-align: center;
+    margin-top: 7%;
+  }
+  .contactSection .wrapper .contactInfo .contactSocials {
+    width: 100%;
+  }
+  .contactSection .wrapper .commentsForm {
+    width: 100%;
+    margin-top: 10%;
   }
 }

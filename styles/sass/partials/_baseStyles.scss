@@ -38,3 +38,11 @@ a:focus {
     background-color: black;
   }
 }
+
+// Contact <i>
+.contactSocial a:hover,
+a:focus {
+  i {
+    color: $mainColor;
+  }
+}

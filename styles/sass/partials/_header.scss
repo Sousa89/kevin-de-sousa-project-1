@@ -34,6 +34,7 @@
   h2 {
     width: 100%;
     text-align: center;
+    position: relative;
   }
   img {
     max-height: 150px;
@@ -68,5 +69,25 @@
 }
 
 // ------------------------
+
+// -----CONTACT HEADER------
+
+.contactHeader {
+  background-color: $mainColor;
+  margin: 0 auto;
+  height: 42vh;
+  position: relative;
+  background-image: url(/assets/contact-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1300px;
+  .wrapper {
+    h2 {
+      font-size: 4rem;
+      position: absolute;
+      bottom: -27px;
+    }
+  }
+}
 
 /* Element | http://127.0.0.1:5500/ */

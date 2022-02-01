@@ -80,8 +80,12 @@
 // ARTICLES GENERAL
 .articles {
   max-height: 659px;
-  .imgContainer {
+  .articlesTopImgSection {
     width: 50%;
+    max-height: 649px;
+  }
+  .imgContainer {
+    width: 100%;
     max-height: 649px;
     img {
       width: 100%;
@@ -105,7 +109,7 @@
       max-height: 315px;
       max-width: 507px;
       top: -35px;
-      box-shadow: 20px 20px aliceblue, 20px;
+      // box-shadow: 20px 20px aliceblue, 20px;
       box-shadow: 22px 23px #68b0c1, -200px 23px #68b0c1;
     }
   }
@@ -123,15 +127,19 @@
   display: flex;
   height: 45vh;
   max-height: 325px;
-  .imgContainer {
+  .articlesBottomImgSection {
+    width: 50%;
+    max-height: 649px;
     position: relative;
-    img {
-      position: absolute;
-      max-height: 315px;
-      max-width: 504px;
-      bottom: -25px;
-      box-shadow: 20px 20px aliceblue, 20px;
-      box-shadow: 22px 23px $mainColor, 200px 23px $mainColor;
+    .imgContainer {
+      img {
+        position: absolute;
+        max-height: 315px;
+        max-width: 504px;
+        bottom: 0px;
+        box-shadow: 20px 20px aliceblue, 20px;
+        box-shadow: 22px 23px $mainColor, 200px 23px $mainColor;
+      }
     }
   }
   .articlesText {
@@ -216,7 +224,7 @@
   background-color: $alternateWhite;
   padding-top: 5%;
 }
-
+// BLOG ASIDE
 .blogAside {
   display: flex;
   flex-direction: column;
@@ -226,6 +234,9 @@
     padding: 30px;
     background-color: white;
     margin-bottom: 7%;
+    border-right: 11px solid #b9dde7;
+    border-radius: 1%;
+    border-bottom: 11px solid #b9dde7;
     .imgContainer {
       width: 100%;
       img {
@@ -242,6 +253,9 @@
   .asideBottom {
     padding: 30px;
     background-color: white;
+    border-bottom: 11px solid #b9dde7;
+    border-right: 11px solid #b9dde7;
+    border-radius: 1%;
     ul {
       padding-left: 22px;
       li {
@@ -257,6 +271,7 @@
     }
   }
 }
+// BLOG TEXT
 .blogMain .wrapper {
   display: flex;
   .blogContainer {
@@ -271,10 +286,15 @@
       padding-bottom: 11%;
       border-bottom: 5px solid $mainAltColor2;
       margin-bottom: 4%;
+      p:nth-child(2) {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #227284;
+      }
     }
   }
 }
-
+// Blog comments
 .blogComments {
   border-bottom: 5px solid $mainAltColor2;
   margin-bottom: 4%;
@@ -282,6 +302,11 @@
     background-color: white;
     display: flex;
     padding: 5%;
+    .commentsText > p:nth-child(1) {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #227284;
+    }
     .imgContainer {
       margin-right: 10px;
     }
@@ -295,10 +320,10 @@
 }
 
 // CONTACT ME SECTION
-
 .contactSection {
   background-color: $alternateWhite;
   padding-top: 6%;
+  padding-bottom: 9%;
   margin-bottom: 0%;
   .wrapper {
     display: flex;
@@ -307,9 +332,41 @@
       background-color: white;
       width: 30%;
       text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-height: 275px;
+      padding-left: 3%;
     }
-    .commentsForm {
-      width: 66%;
+  }
+  // CONTACT INFO SECTION
+  .contactInfo {
+    .contactSocials {
+      display: flex;
+      justify-content: space-between;
+      width: 64%;
+      margin-bottom: 4%;
+      a {
+        color: $mainAltColor2;
+      }
     }
+    .contactEmail {
+      font-weight: bold;
+      font-family: inherit;
+      margin: 9% 0;
+    }
+    .contactText {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 4%;
+      }
+      p {
+        margin: 0%;
+      }
+    }
+  }
+  .commentsForm {
+    width: 67%;
   }
 }
